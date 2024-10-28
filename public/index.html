@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
   </head>
   <body>
-    <h1 class="bg-red-400">h1</h1>
+    <div class="bg-slate-800 h-screen w-screen">
+      <div class="h-12 flex items-center justify-center gap-x-4 bg-slate-700">
+        <h1 class="text-xl font-bold text-slate-300">Inventory App</h1>
+        <span
+          class="flex items-center justify-center w-7 h-7 rounded-full bg-slate-500 text-slate-300 border-2 border-slate-400 font-bold"
+          >7</span
+        >
+      </div>
+      <div class="container max-w-sm mx-auto">
+        <div>
+          <h2 class="text-xl text-slate-300 font-bold">Add New category</h2>
+          <form class="bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
+            <div>
+              <label for="category-title" class="block mb-1 text-slate-400 rou"
+                >title</label
+              >
+              <input
+                type="text"
+                name="category-title"
+                id="category-title"
+                class="bg-transparent rounded-xl border border-slate-500 text-slate-400"
+              />
+            </div>
+
+            <div>
+              <label for="category-description">title</label>
+              <textarea
+                type="text"
+                name="category-description"
+                id="category-description"
+              ></textarea>
+            </div>
+            <div>
+              <button>Cancel</button>
+              <button>Add new category</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
