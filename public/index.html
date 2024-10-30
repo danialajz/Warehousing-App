@@ -63,6 +63,56 @@
           </form>
         </div>
       </div>
+      <div class="container max-w-screen-sm mx-auto">
+        <h2 class="text-xl text-slate-300 font-bold mt-3">Add New Product</h2>
+        <form class="bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4 mt-3">
+          <div>
+            <label for="product-title" class="block mb-1 text-slate-400"
+              >Product title</label
+            >
+            <input
+              type="text"
+              name="product-title"
+              id="product-title"
+              class="bg-transparent rounded-xl border border-slate-500 text-slate-400"
+              placeholder="product title"
+            />
+          </div>
+          <div>
+            <label for="Product-title" class="block mb-1 text-slate-400"
+              >Quantity</label
+            >
+            <input
+              type="number"
+              name="quantity-title"
+              id="quantity-title"
+              class="bg-transparent rounded-xl border border-slate-500 text-slate-400"
+              placeholder="quantity"
+            />
+          </div>
+          <div>
+            <label for="quantity-description" class="block mb-1 text-slate-400"
+              >Category</label
+            >
+            <select
+              class="bg-transparent rounded-xl border border-slate-500 text-slate-400 w-full"
+              type="text"
+              name="category-description"
+              id="category-description"
+            >
+              <option value="category">select a category</option>
+              <option value="backend">backend</option>
+              <option value="frontend">frontend</option>
+              <option value="Devops">Devops</option>
+            </select>
+          </div>
+          <button
+            class="flex-1 border bg-slate-500 border-slate-400 text-slate-300 rounded-xl py-2"
+          >
+           Add new product
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
